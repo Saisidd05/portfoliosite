@@ -1,76 +1,73 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Sai Siddharth Nanda Gopal — Product Portfolio
 
-This repository contains my personal portfolio website, designed to showcase my projects, skills, and contact details in a clean and professional manner.
+A world-class, premium interactive product portfolio designed with **Next.js 15**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**. It showcases full-stack web architectures, cross-platform mobile apps (Flutter), and automated systems.
 
----
-
-## 👨‍💻 About Me
-
-I am a **B.Tech Information Technology student at Agni College of Technology**, passionate about building practical, user-focused technology solutions.  
-I enjoy working on real-world projects that improve workflows and solve meaningful problems.
-
-I have hands-on experience through:
-- A one-month internship at **Garuda Aerospace, Chennai**
-- Team-based application development projects
-- Continuous learning in software development and UI design
+> **Tagline**: *"Building Products, Not Just Projects"*
 
 ---
 
-## 🚀 Features
+## 🎨 Design Philosophy & UX Highlights
 
-- Responsive and modern UI design  
-- Smooth scroll navigation  
-- Dark mode toggle  
-- Animated project section with expandable dialogs  
-- Clean “About Me” professional layout  
-- Two-column contact section with contact details and form  
-- Mobile-friendly hamburger navigation  
+- 🖥️ **Cinematic 3D Monitor Loading Experience**: A gated entry portal displaying an interactive 3D glass monitor. Simulates a custom booting sequence (compiling design tokens, mapping databases) counting up to `100%` before transitioning into the portfolio via a full-screen camera zoom-blur dissolve.
+- 📐 **3D Portrait Parallax & Orbiting Particles**: The professional portrait card tilts dynamically in response to mouse coordinates. It is surrounded by absolute-positioned orbiting glass badges (mocking GitHub commits, verified ATS scores, and core skillsets) running on desynchronized bobbing frequencies.
+- 💎 **Startup-Style Case Studies**: Dedicated sections for flagship products featuring high-fidelity mockups, detailed problem-to-solution mappings, step-by-step design processes, and future development roadmaps.
+- 🍱 **Bento Grid Capability Matrix**: A clean bento layout mapping technical proficiencies: Frontend, Backend & OOP, Mobile Engineering (Flutter & Dart), UI/UX Design, and Version Tools.
+- 📊 **Developer Activity Dashboard**: Custom mock dashboard displaying contribution heatmaps, language weight distribution, and live metric count-ups.
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technology Stack
 
-- **HTML5** – Structure  
-- **CSS3** – Styling, animations, responsive layout  
-- **JavaScript (Vanilla)** – Interactivity and UI logic  
-
----
-
-## 📂 Projects Included
-
-- **CodeAlpha Calculator**  
-  A basic calculator built using HTML, CSS, and JavaScript with real-time operations.
-
-- **Rise-3.0 Currency Converter (Python GUI)**  
-  A Python-based GUI application that converts currencies using real-time exchange rates.
-
-- **CodeAlpha Portfolio Site**  
-  A responsive portfolio website built using HTML, CSS, and JavaScript.
-
-- **Lathe Application – LynkLathe Solutions**  
-  A digital platform designed to modernize small and medium lathe workshops by simplifying job management, quotations, billing, and customer communication.
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styles**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
 ---
 
-## 📞 Contact
+## 📂 Core Flagship Projects
 
-**Sai Siddharth NandaGopal**  
-B.Tech Information Technology Student  
-Agni College of Technology  
+### 1. Mistry Gems Showroom
+* **Description**: A digital catalog and automated invoice generator built for high-end gemstone wholesale merchants, transitioning traditional paper workflows into a sub-second search and tag-filtration cloud portal.
+* **Tech**: Next.js, TypeScript, Tailwind CSS.
 
-- 📧 Email: nsaisiddharth05@gmail.com  
-- 🐙 GitHub: https://github.com/Saisidd05  
-- 💼 LinkedIn: https://www.linkedin.com/in/sai-siddharth-nanda-gopal-b96883321  
-- 📱 WhatsApp: +91 93454 11184  
+### 2. AI Resume Builder SaaS
+* **Description**: An AI-powered resume parser and job-tailoring engine. Runs semantic similarity match checks to identify keyword gaps, rewrite Bullet points using LLMs, and compile structured LaTeX single-page layouts.
+* **Tech**: Next.js, OpenAI API, PostgreSQL, Supabase.
 
 ---
 
-## 📸 Preview
+## 🚀 Getting Started Locally
 
-You can view the live project by opening the `index.html` file in any modern web browser.
+To run the application locally on your machine, follow these steps:
+
+### 1. Install Dependencies
+Make sure you have Node.js installed, then run:
+```bash
+npm install
+```
+
+### 2. Run the Development Server
+Launch the local development environment:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
+
+### 3. Build for Production
+To build the optimized production bundles:
+```bash
+npm run build
+```
+
+### 4. Start Production Server
+Run the production build locally:
+```bash
+npm run start
+```
 
 ---
 
 ## 📄 License
-
-This project is for personal and educational use.
+This repository is for personal and educational use. All rights reserved.
