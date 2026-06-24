@@ -1,0 +1,149 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&f[]=satoshi@300,400,500,700,900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: 222.2 47.4% 1.2%; /* #020617 */
+  --foreground: 210 40% 98%;
+  
+  --primary: 156 100% 41%; /* #00D084 */
+  --primary-foreground: 222.2 47.4% 1.2%;
+  
+  --secondary: 188 86% 43%; /* #06B6D4 */
+  --secondary-foreground: 222.2 47.4% 1.2%;
+  
+  --muted: 215.4 16.3% 65.1%; /* #94A3B8 */
+  --muted-foreground: 215.4 16.3% 56.9%;
+  
+  --accent: 188 86% 43%;
+  --accent-foreground: 210 40% 98%;
+
+  --border: 0 0% 100% / 0.08;
+  --surface: 0 0% 100% / 0.05;
+  --glow: 156 100% 41% / 0.2;
+}
+
+@theme inline {
+  --color-background: #020617;
+  --color-foreground: #F8FAFC;
+  --color-primary: #00D084;
+  --color-secondary: #06B6D4;
+  --color-muted: #94A3B8;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-glow: rgba(0, 208, 132, 0.2);
+
+  --font-sans: 'Inter', 'Satoshi', sans-serif;
+  --font-heading: 'Clash Display', 'Satoshi', sans-serif;
+}
+
+body {
+  background-color: #020617;
+  color: #F8FAFC;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom premium styling utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(0, 208, 132, 0.15);
+}
+
+/* Dot grid overlay */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Linear grid pattern overlay */
+.line-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Text color gradients */
+.text-gradient-primary {
+  background: linear-gradient(135deg, #F8FAFC 30%, #00D084 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00D084 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-slate {
+  background: linear-gradient(135deg, #F8FAFC 50%, #64748B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* High performance floating animation */
+.float-bob {
+  animation: floatBob 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes floatBob {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Aurora background slow gradient shifters */
+.aurora-orb {
+  filter: blur(140px);
+  will-change: transform, opacity;
+  opacity: 0.45;
+  mix-blend-mode: screen;
+}
+
+/* Magnetic effect glow utility */
+.glow-spotlight {
+  background: radial-gradient(600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(0, 208, 132, 0.08), transparent 40%);
+  pointer-events: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 208, 132, 0.3);
+}
